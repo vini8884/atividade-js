@@ -1,0 +1,270 @@
+Exercício JavaScript
+
+1)Escreva um programa que peça dois números e exiba a soma deles.
+
+ var num1 = parseInt(prompt ())
+ var num2 = parseInt(prompt ())
+ var soma = (num1 + num2)
+ document.write (soma);
+ 
+2)Escreva um programa que peça dois números e exiba a subtração do primeiro pelo segundo.
+
+ var num1 = parseInt(prompt ())
+ var num2 = parseInt(prompt ())
+ var soma = (num1 - num2)
+ document.write (soma);
+
+3)Escreva um programa que peça dois números e exiba a multiplicação deles.
+
+ var num1 = parseInt(prompt ())
+ var num2 = parseInt(prompt ())
+ var soma = (num1 * num2)
+ document.write (soma);
+
+4)Escreva um programa que peça dois números e exiba a divisão do primeiro pelo segundo.
+
+ var num1 = parseInt(prompt ())
+ var num2 = parseInt(prompt ())
+ var soma = (num1 / num2)
+ document.write (soma);
+
+5)Escreva um programa que peça dois números e exiba o resto da divisão do primeiro pelo segundo.
+
+ var num1 = parseInt(prompt ())
+ var num2 = parseInt(prompt ())
+ var soma = (num1 % num2)
+ document.write (soma);
+
+6)Escreva um programa que incremente o valor de uma variável em 1 e exiba o resultado.
+
+var num1 = parseInt(prompt("digite um numero"));
+num1 += 5; 
+document.write(num1)
+
+
+7)Escreva um programa que decremente o valor de uma variável em 1 e exiba o resultado.
+
+var num1 = parseInt(prompt("digite um numero"));
+num1 -= 5; 
+document.write(num1)
+
+
+8)Atribua o valor de uma variável a outra.
+
+var a = 5
+var soma ;
+soma = a
+document.write(soma)
+
+9)Some 10 a uma variável existente usando o operador +=.
+
+var num1 = parseInt(prompt("digite um numero"))
+num1 += 10
+document.write(num1)
+
+10)Subtraia 5 de uma variável existente usando o operador -=.
+
+var num1 = parseInt(prompt("digite um numero"))
+num1 -= 5
+document.write(num1)
+
+11)Multiplique o valor de uma variável por 4 usando o operador *=.
+
+var num1 = parseInt(prompt("digite um numero"))
+num1 *= 4
+document.write(num1)
+
+12)Divida o valor de uma variável por 2 usando o operador /=.
+
+var num1 = parseInt(prompt("digite um numero"))
+num1 /= 2
+document.write(num1)
+
+13)Obtenha o resto da divisão de uma variável por 3 usando o operador %=.
+
+var num1 = parseInt(prompt("digite um numero"))
+num1 %= 10
+document.write(num1)
+
+14)Escreva um programa que verifique se um número é positivo ou negativo.
+
+var num1 = parseInt(prompt("digite um numero"))
+if(num1 <= -1){document.write("é negativo")}
+else {document.write("numero é positivo")}
+
+15)Escreva um programa que verifique se um número é par ou ímpar.
+
+ var numero = parseInt(prompt("Digite um número:"));
+if (numero % 2 === 0) {
+   document.write(`O número ${numero} é par.`);
+} else {
+    document.write(`O número ${numero} é ímpar.`);
+}
+
+
+16)Escreva um programa que verifique qual dos dois números é maior.
+
+var a = parseInt(prompt("num1"))
+var b = parseInt(prompt("num2"))
+
+if (a>b){document.write(a," o primeiro é maior")}
+else {document.write(b," o segundo é maior")}
+
+
+17)Escreva um programa que verifique se uma pessoa tem mais de 18 anos.
+
+var idade = prompt("qual sua idade")
+if (idade >= 18){document.write("é maior de idade")}
+else {document.write("é menor de idade")}
+
+18)Escreva um programa que verifique se um número está no intervalo entre 0 e 100.
+
+var num = prompt("qual sua idade")
+if (num >= 0 && num <=100){document.write(num," O numero esta entre 0 e 100")}
+else {document.write("O numero deve ser de 0 a 100")}
+
+
+
+19)Escreva um programa que verifique se uma letra é uma vogal ou consoante.
+
+var letra = prompt("Digite uma letra");
+
+switch (letra.toLowerCase()) { // Converte para minúscula para comparação
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        document.write("É VOGAL");
+        break;
+    default:
+        document.write("É CONSOANTE ou INVÁLIDO");
+        break;
+}
+
+20)Escreva um programa que verifique qual dos três números é o maior.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+var num3 = parseInt(prompt("Digite o terceiro número:"));
+
+if (num1 > num2 && num1 > num3) {
+    alert(num1 + " é o maior número.");
+} else if (num2 > num1 && num2 > num3) {
+    alert(num2 + " é o maior número.");
+} else if (num3 > num1 && num3 > num2) {
+    alert(num3 + " é o maior número.");
+} else {
+    alert("Pelo menos dois números são iguais e são os maiores.");
+}
+
+
+21)Escreva um programa que verifique se um ano é bissexto.
+
+var ano = prompt("Digite um ano:");
+
+ano = Number(ano);
+
+if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+    alert(ano + " é um ano bissexto.");
+} else {
+    alert(ano + " não é um ano bissexto.");
+}
+
+22)Escreva um programa que verifique se dois números são positivos.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+
+if (num1 > 0 && num2 > 0) {
+    alert("Ambos os números são positivos.");
+} else if (num1 > 0 || num2 > 0) {
+    alert("Um dos números é positivo.");
+} else {
+    alert("Nenhum dos números é positivo.");
+}
+
+23)Escreva um programa que verifique se pelo menos um dos dois números é negativo.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+
+if(num1 > 0){document.write(num1," numero um é postivo<br>")}
+if(num2 >0){document.write(num2," numero dois é positivo<br>")}
+
+if(num1 < 0 ){document.write(num1," num1 é negativo <br>")}
+if(num2 < 0 ){document.write(num2," num2 é negativo")}
+
+24)Escreva um programa que verifique se um número é par e positivo.
+
+var numero = parseInt(prompt("Digite um número:"));
+
+if (numero > 0 && numero % 2 === 0) {
+    document.write(numero + " é par e positivo.");
+} else if (numero > 0) {
+    document.write(numero + " é positivo, mas não é par.");
+} else if (numero % 2 === 0) {
+     document.write(numero + " é par, mas não é positivo.");
+} else {
+     document.write(numero + " não é par nem positivo.");
+}
+
+
+25)Escreva um programa que verifique se um número não é múltiplo de 5.
+
+var numero = parseInt(prompt("Digite um número:"));
+
+if (numero % 5 !== 0) {
+    document.write(numero + " não é múltiplo de 5.");
+} else {
+    document.write(numero + " é múltiplo de 5.");
+}
+
+26)Escreva um programa que verifique se um número está fora do intervalo de 1 a 10.
+
+var numero = parseInt(prompt("Digite um número:"));
+
+if (numero >= 1 && numero <=10){document.write("numero esta entre 1 e 10")}
+else{document.write("numero deve estar entre 1 e 10")}
+
+27)Escreva um programa que verifique se dois números são pares.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+
+if (num1 % 2 === 0 && num2 % 2 === 0) {
+    document.write("Ambos os números são pares.");
+} else if (num1 % 2 === 0 || num2 % 2 === 0) {
+    document.write("Um dos números é par.");
+} else {
+    document.write("Nenhum dos números é par.");
+}
+
+28)Escreva um programa que verifique se a soma de dois números é maior que 100.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+
+var soma = num1 + num2;
+
+if (soma > 100){document.write(soma," AS SOMAS É MAIOR QUE 100")}
+if(soma == 100){document.write(soma," a soma dos dois é igual a 100")}
+if(soma < 100 ){document.write( soma , " A soma é menor que 100")}
+
+29)Escreva um programa que verifique se dois números são iguais ou diferentes.
+
+var num1 = parseInt(prompt("Digite o primeiro número:"));
+var num2 = parseInt(prompt("Digite o segundo número:"));
+
+if(num1 == num2){document.write("numeros são iguais")}
+else {document.write("numeros são diferentes")}
+
+30)Escreva um programa que verifique se uma string não está vazia.
+
+var texto = prompt("Digite uma string:");
+
+if (texto.trim() !== "") {
+    alert("A string não está vazia.");
+} else {
+    alert("A string está vazia.");
+}
